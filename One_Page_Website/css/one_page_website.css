@@ -1,0 +1,39 @@
+/*---------- fonts --------*/
+head {
+font-family: "Georgia", serif;
+font-size: 36px;
+}
+
+
+body {
+    font-family: "Georgia", serif;
+    font-size: 20px;
+}
+
+/*-------------------------*/
+.reservation    {
+    width: 100px;
+    padding: 56px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 100px;
+}
+/*--------------------------*/
+
+.reservation form   {
+    color: blue;
+    padding: 5%;
+    width: 90%;
+    margin: 50%;
+    border: orange dashed 3px;
+    border-radius: 10px;
+    background: #fff;
+}
+/*-----------------------------*/
+
+.reservation input[type=text]   {
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5%;
+}
