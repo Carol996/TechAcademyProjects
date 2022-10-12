@@ -1,0 +1,205 @@
+/*---------------------------CHALLENGE 1 CSS---------------------------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  filter: blur(10px) grayscale(80%);
+  border-radius: 25px;
+}
+
+.center:hover {
+    filter: blur(0px)
+}
+
+html    {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+html h1 {
+  text-align: center;
+  padding-top:5em;
+  padding-bottom:2em;
+}
+/*--------------------------- END CHALLENGE 1 CSS---------------------------------*/
+
+
+
+
+/*--------------------------- CHALLENGE 2 CSS---------------------------------*/
+
+.footer p{
+  text-align: center;
+  text-decoration: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/*--------------------------- END CHALLENGE 2 CSS---------------------------------*/
+
+
+
+
+
+/*--------------------------- CHALLENGE 3 CSS ---------------------------------*/
+.table  {
+  width: 70%;
+  height: auto;
+  border: 1px solid #6b2424f3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table th {
+  padding: 5px;
+  background-color: rgb(66, 15, 15);
+}
+
+.table td {
+  text-align: center;
+}
+
+.table td:hover  {
+  color:#c4a96b;
+  cursor: pointer;
+}
+/*--------------------------- END CHALLENGE 3 CSS ---------------------------------*/
+
+
+
+
+/*--------------------------- CHALLENGE 4 CSS ---------------------------------*/
+.rectangle  {
+  position: relative;
+  text-align: center;
+  color: darkred;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*--------------------------- END CHALLENGE 4 CSS ---------------------------------*/
+
+
+
+
+/*--------------------------- CHALLENGE 5 CSS ---------------------------------*/
+.navbar {
+  overflow: hidden;
+  background-color: #525252a4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+ }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #b56868;
+  text-align: center;
+  padding: 7px 9px;
+  text-decoration: underline;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.navbar a:hover {
+  background: #4b1f1f;
+  color: #ffffff;
+}
+/*--------------------------- END CHALLENGE 5 CSS ---------------------------------*/
+
+
+
+
+
+/*---------------------------CHALLENGE 6 CSS---------------------------------*/
+.column {
+  float: left;
+  width: 50%;
+  color: wheat;
+  width: 300px;
+  height: 100px;
+  border:rgb(66, 15, 15) 1px dashed;
+  padding: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*--------------------------- END CHALLENGE 6 CSS----------------------------*/
+
+
+
+
+
+
+/*--------------------------- CHALLENGE 7 CSS ---------------------------------*/
+.paragraph  {
+  color: rgb(212, 178, 99);
+  text-align: right;
+  text-decoration: overline;
+}
+
+.paragraph:hover  {
+  color:rgb(66, 15, 15);
+}
+/*--------------------------- END CHALLENGE 7 CSS ---------------------------------*/
+
+
+
+
+
+
+/*--------------------------- CHALLENGE 8 CSS ---------------------------------*/
+
+.image-container {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+}
+
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.image-container:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  cursor: pointer;
+}
+/*--------------------------- END CHALLENGE 8 CSS ---------------------------------*/
+
+
+
+
+
+
+/*--------------------------- CHALLENGE 9 CSS ---------------------------------*/
+.video  {
+display: block;
+margin-left: 50%;
+margin-right: 75%;
+}
+/*--------------------------- END CHALLENGE 9 CSS ---------------------------------*/
