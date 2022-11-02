@@ -3,20 +3,13 @@
 	<head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../One_Page_Website/css/one_page_website.css">
-		<title>
-			|| SEA ||
-		</title>
-		<h1>
-			SEA
-		</h1>
-		<p>
-			A compilation of the best beaches alongside the Colombian Caribbean coast
-		</p>
+		<title>|| SEA ||</title>
+		<h1>SEA</h1>
+		<p>A compilation of the best beaches alongside the Colombian Caribbean coast</p>
+		<script src="js/one_page_website.js" defer></script>
 	</head>
 	<body>
-	
-	
-	
+		
 	<!-- NAV -->
 	<div>
 		<div>
@@ -27,8 +20,7 @@
 			</ul>
 		</div>
 	</div>
-	<!-- END NAV -->
-	
+	<!-- END NAV -->	
 	
 	<!-- HOME -->
 	<div>
@@ -43,96 +35,141 @@
 	
 	<!-- SC -->
 	<section>
-		<div id="sc">
+		<!-- there was a div here with the id=sc used to link navbar to this section
+		 --- i removed this div for the purpose of creating the lightbox --->
 		<h1>SEA</h1>
-		</div>
 			<p>Explore what the Colombian Caribbean coast has to offer!</p>
-			
-			
-			<!-- PLY1 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa1.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
+
+			<div class="row"> <!-- this div is for the tumbnails of the photos-->
+				<div class="column">
+					<img src="images/thumbs/thumb1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumbs/thumb2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumbs/thumb3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumbs/thumb4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumbs/thumb5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumbs/thumb6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumbs/thumb7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+				</div>
 			</div>
-			<!-- END PLY1 -->
+			
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">	
+				<!-- PLY1 -->
+				<div class="mySlides">
+					<div class="numbertext">1 / 7</div>
+						<img src="./images/playa1.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY1 -->
+				
+						
+				<!-- PLY2 -->
+				<div class="mySlides">
+					<div class="numbertext">2 / 7</div>
+						<img src="./images/playa2.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY2 -->		
 			
 			
 			
+				<!-- PLY3 -->
+				<div class="mySlides">
+					<div class="numbertext">3 / 7</div>
+						<img src="./images/playa3.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY3 -->
 			
-			<!-- PLY2 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa2.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
+			
+			
+				<!-- PLY4 -->
+				<div class="mySlides">
+					<div class="numbertext">4 / 7</div>
+						<img src="./images/playa4.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY4 -->
+			
+			
+			
+				<!-- PLY5 -->
+				<div class="mySlides">
+					<div class="numbertext">5 / 7</div>
+						<img src="./images/playa5.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY5 -->
+			
+			
+			
+				<!-- PLY6 -->
+				<div class="mySlides">
+					<div class="numbertext">6 / 7</div>
+						<img src="./images/playa6.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY6 -->
+			
+			
+			
+				<!-- PLY7 -->
+				<div class="mySlides">
+					<div class="numbertext">7 / 7</div>
+						<img src="./images/playa7.jpg" alt="Image not available" style="width:100%">	
+				</div>
+				<!-- END PLY7 -->
+
+
+				<!--these are the next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+				<!--caption txt-->
+				<div class="caption-container">
+				<p id="caption"></p>
+				</div>
+
+
+
+				<!---- this is the thumbnail image control-->
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb1.jpg" onclick="currentSlide(1)" alt="Beach">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb2.jpg" onclick="currentSlide(2)" alt="Beach">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb3.jpg" onclick="currentSlide(3)" alt="Beach">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb4.jpg" onclick="currentSlide(4)" alt="Beach">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb5.jpg" onclick="currentSlide(5)" alt="Beach">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb6.jpg" onclick="currentSlide(6)" alt="Beach">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbs/thumb7.jpg" onclick="currentSlide(7)" alt="Beach">
+				</div>
 			</div>
-			<!-- END PLY2 -->
-			
-			
-			
-			
-			<!-- PLY3 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa3.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
-			</div>
-			<!-- END PLY3 -->
-			
-			
-			
-			<!-- PLY4 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa4.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
-			</div>
-			<!-- END PLY4 -->
-			
-			
-			
-			<!-- PLY5 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa5.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
-			</div>
-			<!-- END PLY5 -->
-			
-			
-			
-			<!-- PLY6 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa6.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
-			</div>
-			<!-- END PLY6 -->
-			
-			
-			
-			
-			<!-- PLY7 -->
-			<div class="photo-container">
-				<div class="photo">
-					<img src="./images/playa7.jpg" alt="Image not available">
-					<div class="photo-overlay">
-					</div>
-				</div>	
-			</div>
-			<!-- END PLY7 -->
+		</div>
 	</section>
 	<!-- END SC -->
 	
