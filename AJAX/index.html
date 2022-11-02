@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My AJAX Sample File</title>
+        <link rel="stylesheet" type="text/css" href="css/ajax.css">
+    </head>
+
+    <body>
+        <button id="req" class="test" onclick="send_request()">Click for change</button>
+    </body>
+
+    <script type="text/javascript">
+        //step 1
+        var myVariable = new XMLHttpRequest(); //this tells me that I'm starting a new XML req (who)
+
+        //step2
+        myVariable.open('GET', 'mycontent.html'); //tells me that my xml req needs to open the .html file
+        //specified on here, via GET/PUT (what, how)
+
+        //step3
+        myVariable.onreadystatechange = function()  {//this function tells me when the xml req should pull the content
+            if (myVariable.readyState == 4) {//readyState stages vary from 0 to 4, here we specify that
+                document.getElementById('req').innerHTML = myVariable.responseText;
+            }
+        }
+
+        //step4
+        function send_request() {
+            myVariable.send();//link between this request and specific element within the html doc
+        }//i.e. if there's multiple buttons, function needs to know which button calls what info 
+    </script>
+</html>

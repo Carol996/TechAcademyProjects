@@ -1,0 +1,16 @@
+button  {
+    color: darkblue;
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 10%;
+    background-color: aquamarine;
+    border-color: green;
+    border-radius: 5%;    
+}
+
+button:hover    {
+    cursor: pointer;
+    background-color: lightblue;
+    box-shadow: 10px;
+}
